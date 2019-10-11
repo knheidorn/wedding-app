@@ -4,6 +4,7 @@
 }
 
 .header-style {
+  text-align: center;
   background-color: white;
 }
 
@@ -12,5 +13,5 @@
 }
 
 .main-image {
-  width: 100vmin;
+  width: 80%;
 }

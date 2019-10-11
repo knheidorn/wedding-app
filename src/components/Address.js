@@ -2,11 +2,11 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Tab, Tabs } from '@material-ui/core'
 
-const Toolbar = () => {
+const Address = () => {
   return(
     <div>
     </div>
   )
 }
 
-export default Toolbar;
+export default Address;
