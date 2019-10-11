@@ -1,23 +1,16 @@
 .app {
   text-align: center;
+  background-color: rgb(223, 249, 177, 0.5);
+}
+
+.header-style {
+  background-color: white;
+}
+
+.banner-image {
+  height: 100%;
 }
 
 .main-image {
   width: 100vmin;
-}
-
-.side-panel {
-  background-color: #DFF9B1;
-  opacity: 0.5;
-  clip-path: inset(0 20% 0 0);
-}
-
-#left-sp {
-  left: 0;
-  height: auto;
-}
-
-#right-sp {
-  right: 0;
-  height: auto;
 }
