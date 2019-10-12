@@ -6,7 +6,7 @@ const Home = () => {
   return(
     <div className="app">
       <Box>
-        <img src={ engagement } alt="Puppy engagement photo" className="main-image"/>
+        <img src={ engagement } alt="Puppy engagement" className="main-image"/>
       </Box>
     </div>
   )

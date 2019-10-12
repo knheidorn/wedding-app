@@ -1,15 +1,13 @@
 .app {
   text-align: center;
-  background-color: rgb(240,240,231, 0.5);
 }
 
 .header-style {
   text-align: center;
-  background-color: rgb(240,240,231, 0.5);
 }
 
 .banner-image {
-  width: 40%;
+  width: 500px;
 }
 
 .main-image {
