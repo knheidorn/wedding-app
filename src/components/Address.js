@@ -1,10 +1,61 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Tab, Tabs } from '@material-ui/core'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import useForm from 'react-hook-form'
 
 const Address = () => {
+  // const { register, handleSubmit, errors } = useForm()
+  // const onSubmit = data => {console.log(data)}
+
   return(
     <div>
+      <form>
+        <select name="Title">
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Miss">Miss</option>
+          <option value="Dr">Dr</option>
+        </select>
+        <input type="text"
+          placeholder="First name"
+          name="First name"
+          // ref={ register({ required: true, maxLength: 80 }) }
+        />
+        <input type="text"
+          placeholder="Last name"
+          name="Last name"
+          // ref={ register({ required: true, maxLength: 100 }) }
+        />
+        <input type="text"
+          placeholder="Email"
+          name="Email"
+          // ref={ register({ required: true, pattern: /^\S+@\S+$/i }) }
+        />
+        <input type="text"
+          placeholder="Address 1"
+          name="Address one"
+          // ref={ register({ required: true }) }
+        />
+        <input type="text"
+          placeholder="Address 2"
+          name="Address two"
+        />
+        <input type="text"
+          placeholder="City"
+          name="City"
+          // ref={ register({ required: true, maxLength: 80 }) }
+        />
+        <input type="text"
+          placeholder="State"
+          name="State"
+          // ref={ register({ required: true, maxLength: 80 }) }
+        />
+        <input type="text"
+          placeholder="Zipcode"
+          name="Zipcode"
+          // ref={ register({ required: true }) }
+        />
+        <input type="submit" />
+      </form>
     </div>
   )
 }
