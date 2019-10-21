@@ -1,61 +1,95 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import TextField from '@material-ui/core/TextField';
+import InputLabel from '@material-ui/core/InputLabel';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Fab from '@material-ui/core/Button';
+import SendIcon from '@material-ui/icons/Send';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup'
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+
 // import useForm from 'react-hook-form'
 
 const Address = () => {
-  // const { register, handleSubmit, errors } = useForm()
-  // const onSubmit = data => {console.log(data)}
+  const [liveWithState, setLiveWith] = useState(true)
+
+  const liveWith = (event) => {
+    setLiveWith()
+  }
 
   return(
-    <div>
-      <form>
-        <select name="Title">
-          <option value="Mr">Mr</option>
-          <option value="Mrs">Mrs</option>
-          <option value="Miss">Miss</option>
-          <option value="Dr">Dr</option>
-        </select>
-        <input type="text"
-          placeholder="First name"
-          name="First name"
-          // ref={ register({ required: true, maxLength: 80 }) }
+    <div className="app">
+      <FormControl>
+        <TextField type="text"
+          label="First name"
+          name="firstName"
+          value={values.firstName || ""}
+          required
         />
-        <input type="text"
-          placeholder="Last name"
-          name="Last name"
-          // ref={ register({ required: true, maxLength: 100 }) }
+        <TextField type="text"
+          label="Last name"
+          name="lastName"
+          value={values.lastName || ""}
+          required
         />
-        <input type="text"
-          placeholder="Email"
-          name="Email"
-          // ref={ register({ required: true, pattern: /^\S+@\S+$/i }) }
+        <RadioGroup aria-label="position"
+          name="position"
+          value={values.liveWith}
+          onChange={liveWith}
+        >
+            <FormControlLabel
+              value="true"
+              control={<Radio color="primary" />}
+              label="I live with my plus one"
+              labelPlacement="start"
+            />
+          </RadioGroup>
+        <TextField type="text"
+          label="Email"
+          name="email"
+          value={values.email || ""}
+          required
         />
-        <input type="text"
-          placeholder="Address 1"
-          name="Address one"
-          // ref={ register({ required: true }) }
+        <TextField type="text"
+          label="Address"
+          name="address_one"
+          value={values.address_one || ""}
+          required
         />
-        <input type="text"
-          placeholder="Address 2"
-          name="Address two"
+        <TextField type="text"
+          label="Apt or Unit #"
+          name="address_two"
+          value={values.address_two || ""}
         />
-        <input type="text"
-          placeholder="City"
-          name="City"
-          // ref={ register({ required: true, maxLength: 80 }) }
+        <TextField type="text"
+          label="City"
+          name="city"
+          value={values.city || ""}
+          required
         />
-        <input type="text"
-          placeholder="State"
-          name="State"
-          // ref={ register({ required: true, maxLength: 80 }) }
+        <TextField type="text"
+          label="State"
+          name="state"
+          value={values.state || ""}
+          required
         />
-        <input type="text"
-          placeholder="Zipcode"
-          name="Zipcode"
-          // ref={ register({ required: true }) }
+        <TextField type="text"
+          label="Zipcode"
+          name="zipcode"
+          value={values.zipcode || ""}
+          required
         />
-        <input type="submit" />
-      </form>
+        <Fab type="submit"
+          aria-label="send"
+          color="primary"
+          className="submit-button"
+        >
+          <SendIcon/>
+        </Fab>
+      </FormControl>
     </div>
   )
 }
