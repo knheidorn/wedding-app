@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import SubmitFormConfirm from './SubmitFormConfirm'
+import useForm from '../helpers/useForm';
+import validate from '../helpers/FormValidationRules'
+
 import TextField from '@material-ui/core/TextField';
-import InputLabel from '@material-ui/core/InputLabel';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Fab from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
@@ -11,87 +11,156 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-// import useForm from 'react-hook-form'
-
 const Address = () => {
-  const [liveWithState, setLiveWith] = useState(true)
+  const [liveWithState, setLiveWith] = useState(false)
+  const [isSubmitted, setFormSubmit] = useState(false)
 
-  const liveWith = (event) => {
-    setLiveWith()
+  const liveWith = () => {
+    if (liveWithState) {
+      setLiveWith(false)
+    } else {
+      setLiveWith(true)
+    }
   }
 
-  return(
-    <div className="app">
-      <FormControl>
-        <TextField type="text"
-          label="First name"
-          name="firstName"
-          value={values.firstName || ""}
-          required
-        />
-        <TextField type="text"
-          label="Last name"
-          name="lastName"
-          value={values.lastName || ""}
-          required
-        />
-        <RadioGroup aria-label="position"
-          name="position"
-          value={values.liveWith}
-          onChange={liveWith}
-        >
+  const submitForm = () => {
+    console.log("Need to send form back to db")
+    setFormSubmit(true)
+  }
+
+  const {
+    valuesSD,
+    errorsSD,
+    handleSubmit,
+    handleChange,
+  } = useForm(submitForm, validate);
+
+  return (
+    <div>
+    {isSubmitted ? (
+      <SubmitFormConfirm />
+    ) : (
+      <div className="app">
+        <FormControl>
+          <TextField type="text"
+            label="First name"
+            name="firstName"
+            value={valuesSD.firstName || ""}
+            onChange={handleChange}
+            required
+          />
+          {errorsSD.firstName && (
+            <p className="sd-is-danger">{errorsSD.firstName}</p>
+          )}
+          <TextField type="text"
+            label="Last name"
+            name="lastName"
+            value={valuesSD.lastName || ""}
+            onChange={handleChange}
+            required
+          />
+          {errorsSD.lastName && (
+            <p className="sd-is-danger">{errorsSD.lastName}</p>
+          )}
+          <RadioGroup aria-label="position"
+            name="position"
+            onClick={liveWith}
+          >
             <FormControlLabel
+              className="live-with"
               value="true"
               control={<Radio color="primary" />}
-              label="I live with my plus one"
+              label={liveWithState ? "Remove Partner's Name" : "Add Partner's Name"}
               labelPlacement="start"
+              checked={liveWithState}
             />
           </RadioGroup>
-        <TextField type="text"
-          label="Email"
-          name="email"
-          value={values.email || ""}
-          required
-        />
-        <TextField type="text"
-          label="Address"
-          name="address_one"
-          value={values.address_one || ""}
-          required
-        />
-        <TextField type="text"
-          label="Apt or Unit #"
-          name="address_two"
-          value={values.address_two || ""}
-        />
-        <TextField type="text"
-          label="City"
-          name="city"
-          value={values.city || ""}
-          required
-        />
-        <TextField type="text"
-          label="State"
-          name="state"
-          value={values.state || ""}
-          required
-        />
-        <TextField type="text"
-          label="Zipcode"
-          name="zipcode"
-          value={values.zipcode || ""}
-          required
-        />
-        <Fab type="submit"
-          aria-label="send"
-          color="primary"
-          className="submit-button"
-        >
-          <SendIcon/>
-        </Fab>
-      </FormControl>
+          {liveWithState &&
+            <>
+              <TextField type="text"
+                label="Partner's First name"
+                name="partFirstName"
+                value={valuesSD.partFirstName || ""}
+                onChange={handleChange}
+                required
+              />
+              <TextField type="text"
+                label="Partner's Last name"
+                name="partLastName"
+                value={valuesSD.partLastName || ""}
+                onChange={handleChange}
+                required
+              />
+            </>
+          }
+          <TextField type="text"
+            label="Address"
+            name="addressOne"
+            value={valuesSD.addressOne || ""}
+            onChange={handleChange}
+            required
+          />
+          {errorsSD.addressOne && (
+            <p className="sd-is-danger">{errorsSD.addressOne}</p>
+          )}
+          <TextField type="text"
+            label="Apt or Unit #"
+            name="addressTwo"
+            value={valuesSD.addressTwo || ""}
+            onChange={handleChange}
+          />
+          <TextField type="text"
+            label="City"
+            name="city"
+            value={valuesSD.city || ""}
+            onChange={handleChange}
+            required
+          />
+          {errorsSD.city && (
+            <p className="sd-is-danger">{errorsSD.city}</p>
+          )}
+          <TextField type="text"
+            label="State"
+            name="state"
+            value={valuesSD.state || ""}
+            onChange={handleChange}
+            required
+          />
+          {errorsSD.state && (
+            <p className="sd-is-danger">{errorsSD.state}</p>
+          )}
+          <TextField type="text"
+            label="Zipcode"
+            name="zipcode"
+            value={valuesSD.zipcode || ""}
+            onChange={handleChange}
+            required
+          />
+          {errorsSD.zipcode && (
+            <p className="sd-is-danger">{errorsSD.zipcode}</p>
+          )}
+          <TextField type="text"
+            label="Email"
+            name="email"
+            value={valuesSD.email || ""}
+            onChange={handleChange}
+            required
+          />
+          {errorsSD.email && (
+            <p className="sd-is-danger">{errorsSD.email}</p>
+          )}
+          <Fab type="submit"
+            aria-label="send"
+            color="primary"
+            className="submit-button"
+          >
+            <SendIcon onClick={handleSubmit}/>
+          </Fab>
+        </FormControl>
+      </div>
+    )}
     </div>
   )
 }
 
-export default Address;
+export default Address
