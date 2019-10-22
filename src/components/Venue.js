@@ -89,16 +89,40 @@ const useStyles = makeStyles(theme => ({
 const Venue = () => {
   const classes = useStyles()
 
+  const openVenue = () => {
+    window.open("https://www.baselcellars.com/")
+  }
+
+  const openWinery = () => {
+    window.open("https://www.wallawalla.org/wineries/")
+  }
+
+  const openRestaurants = () => {
+    window.open("https://www.wallawalla.org/restaurants/")
+  }
+
+  const openDowntown = () => {
+    window.open("https://www.wallawalla.org/things-to-do/")
+  }
+
+  const openHikes = () => {
+    window.open("https://www.wallawalla.org/things-to-do-in-walla-walla/hiking/")
+  }
+
+  const openStay = () => {
+
+  }
+
   return(
-    <div>
+    <>
       <div className="main-image-venue">
         <div className="transbox">
-          <h4
-            color="black"
-            className={classes.imageTitle}
-          >
+          <p className="day-of-title">
+            June 20
+          </p>
+          <p className="day-of-text">
             Wedding Itinerary to Come
-          </h4>
+          </p>
         </div>
       </div>
       <div className={classes.root}>
@@ -110,6 +134,7 @@ const Venue = () => {
         style={{
           width: '40%',
         }}
+        onClick={openVenue}
       >
         <img src={venue}
           className={classes.imageSrc}
@@ -136,6 +161,7 @@ const Venue = () => {
         style={{
           width: '30%',
         }}
+        onClick={openRestaurants}
       >
         <img src={meal}
           className={classes.imageSrc}
@@ -162,6 +188,7 @@ const Venue = () => {
         style={{
           width: '30%',
         }}
+        onClick={openDowntown}
       >
         <img src={downtown}
           className={classes.imageSrc}
@@ -184,12 +211,13 @@ const Venue = () => {
       <div className={classes.root}>
       <ButtonBase
         focusRipple
-        key="Venue"
+        key="Stay"
         className={classes.image}
         focusVisibleClassName={classes.focusVisible}
         style={{
           width: '30%',
         }}
+        onClick={openStay}
       >
         <img src={stay}
           className={classes.imageSrc}
@@ -216,6 +244,7 @@ const Venue = () => {
         style={{
           width: "45%",
         }}
+        onClick={openWinery}
       >
       <img src={winery}
         className={classes.imageSrc}
@@ -242,6 +271,7 @@ const Venue = () => {
         style={{
           width: "25%",
         }}
+        onClick={openHikes}
       >
       <img src={hike}
         className={classes.imageSrc}
@@ -261,7 +291,7 @@ const Venue = () => {
           </Typography>
       </ButtonBase>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -20,7 +20,7 @@ const Toolbar = () => {
           to="/about-us"
         />
         <Tab
-          label="Venue"
+          label="Itinerary"
           component={ Link }
           to="/day-of-details"
         />

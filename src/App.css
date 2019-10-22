@@ -18,9 +18,8 @@
 }
 
 .main-image-venue {
-  background-image: url('./images/backyard.jpg');
+  background: url('./images/backyard.jpg') center;
   background-repeat: no-repeat;
-
   background-attachment: scroll;
   background-size: cover;
   width: 100%;
@@ -35,6 +34,47 @@
   height: 80%;
   width: 100%;
   filter: alpha(opacity=60);
+  text-align: center;
+}
+
+.save-the-date {
+  background: url('./images/proof3.jpg') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transbox-sd {
+  position: relative;
+  background-color: #ffffff;
+  opacity: 0.85;
+  height: 100%;
+  width: 350px;
+  margin: 0 auto;
+  filter: alpha(opacity=85);
+  text-align: center;
+}
+
+.form-sd {
+  padding-top: 24%;
+  padding-bottom: 24%;
+}
+
+.day-of-text {
+  padding-top: 1%;
+  font-weight: normal;
+  font-size: 1.7rem;
+}
+
+.day-of-title {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-top: 5%;
+}
+
+#title-sd {
+  font-style: oblique;
+  font-weight: 350;
 }
 
 #venue {
