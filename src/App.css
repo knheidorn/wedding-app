@@ -16,3 +16,59 @@
   border-width: medium;
   border-color: black;
 }
+
+.main-image-venue {
+  background-image: url('./images/backyard.jpg');
+  background-repeat: no-repeat;
+
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  height: 630px;
+}
+
+.transbox {
+  position: relative;
+  top: 10%;
+  background-color: #ffffff;
+  opacity: 0.6;
+  height: 80%;
+  width: 100%;
+  filter: alpha(opacity=60);
+}
+
+#venue {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#eat {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#winery {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#stay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#downtown {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#hike {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
