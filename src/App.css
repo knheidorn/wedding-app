@@ -10,6 +10,11 @@
   width: 500px;
 }
 
+.toolbar-tabs:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 .main-image {
   width: 65%;
   border-style: double;
@@ -30,10 +35,10 @@
   position: relative;
   top: 10%;
   background-color: #ffffff;
-  opacity: 0.6;
+  opacity: 0.79;
   height: 80%;
   width: 100%;
-  filter: alpha(opacity=60);
+  filter: alpha(opacity=79);
   text-align: center;
 }
 
@@ -60,26 +65,35 @@
 }
 
 .day-of-text-large {
-  padding-top: 1%;
-  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
   font-size: 1.7rem;
 }
 
 .day-of-text-medium {
-  font-weight: normal;
-  font-size: 1.35rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 1.4rem;
 }
 
 .day-of-text-small {
-  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
   font-size: 1.2rem;
 }
 
 .day-of-title {
   font-style: oblique;
-  font-weight: bold;
+  font-weight: medium;
   font-size: 2.5rem;
   padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2.5rem;
 }
 
 #title-sd {

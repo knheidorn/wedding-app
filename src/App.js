@@ -7,13 +7,14 @@ import Venue from './components/Venue'
 import Rsvp from './components/Rsvp'
 import Address from './components/Address'
 import About from './components/About'
+import Travel from './components/Travel'
+import Stay from './components/Stay'
 import Toolbar from './components/Toolbar'
 import './App.css';
 import foliage from './images/foliage.png'
 
 
 const App = () => {
-
   return(
     <Router>
       <header className="header-style">
@@ -37,6 +38,12 @@ const App = () => {
         }/>
         <Route path="/about-us" component={ () =>
           <About />
+        }/>
+        <Route path="/travel-walla" component={ () =>
+          <Travel />
+        }/>
+        <Route path="/stay-walla" component={ () =>
+          <Stay />
         }/>
       </Switch>
     </Router>

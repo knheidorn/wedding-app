@@ -13,21 +13,31 @@ const Toolbar = () => {
           label="Home"
           component={ Link }
           to="/"
-        />
-        <Tab
-          label="Our Story"
-          component={ Link }
-          to="/about-us"
-        />
-        <Tab
-          label="Itinerary"
-          component={ Link }
-          to="/day-of-details"
+          className="toolbar-tabs"
         />
         <Tab
           label="Send Your Address"
           component={ Link }
           to="/save-the-date"
+          className="toolbar-tabs"
+        />
+        <Tab
+          label="Our Story"
+          component={ Link }
+          to="/about-us"
+          className="toolbar-tabs"
+        />
+        <Tab
+          label="Itinerary"
+          component={ Link }
+          to="/day-of-details"
+          className="toolbar-tabs"
+        />
+        <Tab
+          label="Travel"
+          component={ Link }
+          to="/travel-walla"
+          className="toolbar-tabs"
         />
       </Tabs>
     </Box>
