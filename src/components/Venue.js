@@ -120,8 +120,18 @@ const Venue = () => {
           <p className="day-of-title">
             June 20
           </p>
-          <p className="day-of-text">
-            Wedding Itinerary to Come
+          <p className="day-of-text-large">
+            The Wedding Ceremony and Reception will be held at Basel Cellars.
+            <br/> More details to follow.
+          </p>
+          <p className="day-of-text-medium">
+            In the meantime, feel free to check out the links below for
+            travel details and things to do in Walla Walla.
+          </p>
+          <p className="day-of-text-small">
+            <strong>Basel Cellars</strong>
+            <br/>2901 Old Milton Hwy
+            <br/>Walla Walla, WA 99362
           </p>
         </div>
       </div>

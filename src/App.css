@@ -59,10 +59,20 @@
   padding-bottom: 24%;
 }
 
-.day-of-text {
+.day-of-text-large {
   padding-top: 1%;
   font-weight: normal;
   font-size: 1.7rem;
+}
+
+.day-of-text-medium {
+  font-weight: normal;
+  font-size: 1.35rem;
+}
+
+.day-of-text-small {
+  font-weight: normal;
+  font-size: 1.2rem;
 }
 
 .day-of-title {
