@@ -4,13 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
-import birch from '../images/stay-page/birch.jpg'
-import vue from '../images/stay-page/vue.jpg'
-import bungalow from '../images/stay-page/bungalow.jpg'
-import cherry from '../images/stay-page/cherry.jpg'
-import casita from '../images/stay-page/casita.jpg'
-import davey from '../images/stay-page/davey.jpg'
-import traditional from '../images/stay-page/traditional.jpg'
+import birch from '../images/stay-page/family/downtown/birch.jpg'
+import vue from '../images/stay-page/family/downtown/vue.jpg'
+import bungalow from '../images/stay-page/family/downtown/bungalow.jpg'
+import cherry from '../images/stay-page/family/downtown/cherry.jpg'
+import casita from '../images/stay-page/family/downtown/casita.jpg'
+import davey from '../images/stay-page/family/downtown/davey.jpg'
+import traditional from '../images/stay-page/family/downtown/traditional.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {

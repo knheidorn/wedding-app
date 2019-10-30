@@ -4,9 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
-import gable from '../images/stay-page/gable.png'
-import duck from '../images/stay-page/duck.png'
-import barn from '../images/stay-page/barn.png'
+import gable from '../images/stay-page/single/city/gable.png'
+import duck from '../images/stay-page/single/city/duck.png'
+import barn from '../images/stay-page/single/city/barn.png'
 
 const useStyles = makeStyles(theme => ({
   root: {
