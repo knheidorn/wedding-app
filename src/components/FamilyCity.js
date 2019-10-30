@@ -4,13 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
-import bryant from '../images/stay-page/city/bryant.jpg'
-import park from '../images/stay-page/city/park.jpg'
-import bryantbarn from '../images/stay-page/city/bryantbarn.jpg'
-import midcentury from '../images/stay-page/city/midcentury.jpg'
-import cottage from '../images/stay-page/city/cottage.jpg'
-import rewind from '../images/stay-page/city/rewind.jpg'
-import farm from '../images/stay-page/city/farm.jpg'
+import bryant from '../images/stay-page/family/city/bryant.jpg'
+import park from '../images/stay-page/family/city/park.jpg'
+import bryantbarn from '../images/stay-page/family/city/bryantbarn.jpg'
+import midcentury from '../images/stay-page/family/city/midcentury.jpg'
+import cottage from '../images/stay-page/family/city/cottage.jpg'
+import rewind from '../images/stay-page/family/city/rewind.jpg'
+import farm from '../images/stay-page/family/city/farm.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
