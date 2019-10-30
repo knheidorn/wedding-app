@@ -1,12 +1,12 @@
 import React from 'react'
-import engagement from '../images/engagement.jpg'
+import engagement from '../images/engagement.png'
 import Box from '@material-ui/core/Box'
 
 const Home = () => {
   return(
     <div className="app">
       <Box>
-        <img src={ engagement } alt="Puppy engagement" className="main-image"/>
+        <img src={ engagement } alt="Puppy engagement" className="main-image-home"/>
       </Box>
     </div>
   )

@@ -7,7 +7,7 @@ import Venue from './components/Venue'
 import Rsvp from './components/Rsvp'
 import Address from './components/Address'
 import About from './components/About'
-import Travel from './components/Travel'
+import Visit from './components/Visit'
 import Stay from './components/Stay'
 import Toolbar from './components/Toolbar'
 import './App.css';
@@ -39,8 +39,8 @@ const App = () => {
         <Route path="/about-us" component={ () =>
           <About />
         }/>
-        <Route path="/travel-walla" component={ () =>
-          <Travel />
+        <Route path="/visit-walla" component={ () =>
+          <Visit />
         }/>
         <Route path="/stay-walla" component={ () =>
           <Stay />

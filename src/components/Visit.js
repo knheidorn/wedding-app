@@ -10,7 +10,6 @@ import winery from '../images/winery.jpg'
 import stay from '../images/stay.jpg'
 import downtown from '../images/downtown.jpg'
 import hike from '../images/hike.jpg'
-import backyard from '../images/backyard.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -86,7 +85,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Travel = () => {
+const Visit = () => {
   const classes = useStyles()
 
   const openVenue = () => {
@@ -111,7 +110,9 @@ const Travel = () => {
 
   return (
     <>
-    <div className={classes.root}>
+    <div className={classes.root}
+      id="margin-button"
+    >
       <ButtonBase
         focusRipple
         key="Venue"
@@ -281,4 +282,4 @@ const Travel = () => {
     </>
   )
 }
-export default Travel
+export default Visit

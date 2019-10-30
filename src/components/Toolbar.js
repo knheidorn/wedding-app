@@ -34,9 +34,15 @@ const Toolbar = () => {
           className="toolbar-tabs"
         />
         <Tab
-          label="Travel"
+          label="Stay"
           component={ Link }
-          to="/travel-walla"
+          to="/stay-walla"
+          className="toolbar-tabs"
+        />
+        <Tab
+          label="Visit"
+          component={ Link }
+          to="/visit-walla"
           className="toolbar-tabs"
         />
       </Tabs>

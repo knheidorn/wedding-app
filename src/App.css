@@ -7,19 +7,24 @@
 }
 
 .banner-image {
-  width: 500px;
+  width: 575px;
 }
 
 .toolbar-tabs:hover {
   text-decoration: underline;
   color: black;
+  background-color:
 }
 
-.main-image {
-  width: 65%;
+.main-image-home {
+  width: 75%;
   border-style: double;
   border-width: medium;
   border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 3%;
 }
 
 .main-image-venue {
@@ -46,6 +51,7 @@
   background: url('./images/proof3.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 3%;
 }
 
 .transbox-sd {
@@ -90,10 +96,24 @@
   padding-bottom: 1%;
 }
 
+.stay-title {
+  position: relative;
+  font-style: oblique;
+  font-weight: medium;
+  font-size: 2.6rem;
+}
+
 .page-title {
-  text-align: center;
-  font-weight: lighter;
-  font-size: 2.5rem;
+  padding-top: 2.5%;
+  position: relative;
+  font-weight: medium;
+  font-size: 2.3rem;
+}
+
+.secondary-title {
+  position: relative;
+  font-weight: medium;
+  font-size: 1.8rem;
 }
 
 #title-sd {
@@ -101,6 +121,11 @@
   font-weight: 350;
 }
 
+#margin-button {
+  margin-top: 3%;
+}
+
+/* Vist page */
 #venue {
   width: 100%;
   height: 100%;
@@ -132,6 +157,130 @@
 }
 
 #hike {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/*Family Downtown page*/
+#birch {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#bungalow {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#vue {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#cherry {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#casita {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#davey {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#traditional {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/*Family City page*/
+#bryant {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#cottage {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#midcentury {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#bryantbarn {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#rewind {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#park {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#farm {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/*Single Downtown page*/
+#wesley {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#hungate {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#marcus {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/*Single City page*/
+#gable {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#duck {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#barn {
   width: 100%;
   height: 100%;
   opacity: 0.8;
