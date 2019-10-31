@@ -24,8 +24,38 @@ const Address = () => {
     }
   }
 
+  const submitRequest = () => {
+    let guest = {
+      first_name: valuesSD.firstName,
+      last_name: valuesSD.lastName,
+      address_1: valuesSD.addressOne,
+      city: valuesSD.city,
+      state: valuesSD.state,
+      zipcode: valuesSD.zipcode,
+      email: valuesSD.email,
+      partner_first: valuesSD.partFirstName,
+      partner_last: valuesSD.partLastName,
+      address_2: valuesSD.addressTwo
+    }
+
+    let body = {guest: guest}
+    console.log(body)
+
+    let config = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body)
+    }
+
+    fetch("http://localhost:3000/guests", config)
+      .then(response => response.json())
+      .then(data => {console.log(data)})
+  }
+
   const submitForm = () => {
-    console.log("Need to send form back to db")
+    submitRequest()
     setFormSubmit(true)
   }
 
