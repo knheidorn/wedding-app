@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Box from '@material-ui/core/Box'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -10,6 +10,7 @@ import About from './components/About'
 import Visit from './components/Visit'
 import Stay from './components/Stay'
 import Toolbar from './components/Toolbar'
+import Footer from './components/Footer'
 import './App.css';
 import foliage from './images/foliage.png'
 
@@ -17,12 +18,14 @@ import foliage from './images/foliage.png'
 const App = () => {
   return(
     <Router>
-      <header className="header-style">
-        <Box>
-          <img src={ foliage } alt="Foliage" className="banner-image"/>
-        </Box>
-        <Toolbar />
-      </header>
+      <div>
+        <header className="header-style">
+          <Box>
+            <img src={ foliage } alt="Foliage" className="banner-image"/>
+          </Box>
+          <Toolbar />
+        </header>
+      </div>
       <Switch>
         <Route exact path="/" component={ () =>
           <Home />
@@ -46,6 +49,11 @@ const App = () => {
           <Stay />
         }/>
       </Switch>
+      <div>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </Router>
   );
 }

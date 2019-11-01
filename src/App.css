@@ -88,6 +88,12 @@
   font-size: 1.2rem;
 }
 
+.day-of-text-xsmall {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
 .day-of-title {
   font-style: oblique;
   font-weight: medium;
@@ -128,7 +134,8 @@
 }
 
 #footer {
-  text-align: center
+  text-align: center;
+  margin-top: 5%;
 }
 
 #title-sd {
