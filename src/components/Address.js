@@ -49,9 +49,8 @@ const Address = () => {
       body: JSON.stringify(body)
     }
 
-    // fetch("https://localhos", config)
-    //   .then(response => response.json())
-    //   .then(data => {console.log(data)})
+    fetch("https://guest-book-wein.herokuapp.com/guests", config)
+      .then(response => response.json())
   }
 
   const submitForm = () => {
