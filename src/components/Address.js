@@ -49,7 +49,7 @@ const Address = () => {
       body: JSON.stringify(body)
     }
 
-    fetch("http://localhost:3000/guests", config)
+    fetch("https://guest-book-wein.herokuapp.com/guests", config)
       .then(response => response.json())
       .then(data => {console.log(data)})
   }
