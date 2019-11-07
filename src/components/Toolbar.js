@@ -22,12 +22,6 @@ const Toolbar = () => {
           className="toolbar-tabs"
         />
         <Tab
-          label="Our Story"
-          component={ Link }
-          to="/about-us"
-          className="toolbar-tabs"
-        />
-        <Tab
           label="Itinerary"
           component={ Link }
           to="/day-of-details"
