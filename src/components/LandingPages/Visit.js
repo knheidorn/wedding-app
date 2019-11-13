@@ -1,16 +1,15 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
-import birch from '../images/stay-page/family/downtown/birch.jpg'
-import vue from '../images/stay-page/family/downtown/vue.jpg'
-import bungalow from '../images/stay-page/family/downtown/bungalow.jpg'
-import cherry from '../images/stay-page/family/downtown/cherry.jpg'
-import casita from '../images/stay-page/family/downtown/casita.jpg'
-import davey from '../images/stay-page/family/downtown/davey.jpg'
-import traditional from '../images/stay-page/family/downtown/traditional.jpg'
+import venue from '../../images/venue.jpg'
+import meal from '../../images/meals.jpg'
+import winery from '../../images/winery.jpg'
+import stay from '../../images/stay.jpg'
+import downtown from '../../images/downtown.jpg'
+import hike from '../../images/hike.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   },
   image: {
     position: 'relative',
-    height: 225,
+    height: 250,
     [theme.breakpoints.down('xs')]: {
       width: '100% !important',
       height: 100,
@@ -67,7 +66,7 @@ const useStyles = makeStyles(theme => ({
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
-    opacity: 0.5,
+    opacity: 0.4,
     transition: theme.transitions.create('opacity'),
   },
   imageTitle: {
@@ -86,120 +85,117 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const FamilyDowntown = () => {
+const Visit = () => {
   const classes = useStyles()
 
-  const openBirch = () => {
-    window.open("https://www.airbnb.com/rooms/21862617?adults=2&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572389629_OHKZgLvTIYQqfp3N")
+  const openVenue = () => {
+    window.open("https://www.baselcellars.com/")
   }
 
-  const openBungalow = () => {
-    window.open("https://www.airbnb.com/rooms/6576291?adults=2&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572391321_aj7EUG42JrXR2vZ0")
+  const openWinery = () => {
+    window.open("https://www.wallawalla.org/wineries/")
   }
 
-  const openVue = () => {
-    window.open("https://www.airbnb.com/rooms/16191840?adults=2&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572391208_iXbmqzOAuIDdQJ4T")
+  const openRestaurants = () => {
+    window.open("https://www.wallawalla.org/restaurants/")
   }
 
-  const openCherry = () => {
-    window.open("https://www.airbnb.com/rooms/16204564?adults=4&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572395719_n9XTj3IR5kqTJL4R")
+  const openDowntown = () => {
+    window.open("https://www.wallawalla.org/things-to-do/")
   }
 
-  const openCasita = () => {
-    window.open("https://www.airbnb.com/rooms/19545218?adults=4&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572396314_i6lifUKUr%2Fi5SLEt")
-  }
-
-  const openDavey = () => {
-    window.open("https://www.airbnb.com/rooms/16176508?adults=4&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572395664_Tgmedo3VXIFSRdkV")
-  }
-
-  const openTraditional = () => {
-    window.open("https://www.airbnb.com/rooms/18178760?adults=6&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572394083_bxn43b1SOikFwdCH")
+  const openHikes = () => {
+    window.open("https://www.wallawalla.org/things-to-do-in-walla-walla/hiking/")
   }
 
   return (
     <>
+      <div className="transbox">
+        <p className="stay-title">
+          Visit Walla Walla
+        </p>
+      </div>
       <div className={classes.root}
         id="margin-button"
       >
         <ButtonBase
           focusRipple
-          key="Birch"
+          key="Venue"
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: '36%',
+            width: '40%',
           }}
-          onClick={openBirch}
+          onClick={openVenue}
         >
-          <img src={birch}
+          <img src={venue}
             className={classes.imageSrc}
-            alt="Birch"
-            id="birch"
+            alt="Venue"
+            id="venue"
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
             <Typography
               component="span"
-              variant="h5"
+              variant="h4"
               color="white"
               className={classes.imageTitle}
             >
-              2 bd / 2 ba<br/>$220/night
+              Venue
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
         <ButtonBase
           focusRipple
-          key="Bungalow"
+          key="Eat"
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: '33%',
+            width: '30%',
           }}
-          onClick={openBungalow}
+          onClick={openRestaurants}
         >
-          <img src={bungalow}
+          <img src={meal}
             className={classes.imageSrc}
-            alt="Bungalow"
-            id="bungalow"
+            alt="Eat"
+            id="eat"
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
             <Typography
               component="span"
-              variant="h5"
+              variant="h4"
               color="white"
               className={classes.imageTitle}
             >
-              2 bd / 2 ba<br/>$130/night
+              Eat
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
         <ButtonBase
           focusRipple
-          key="Vue"
+          key="Downtown"
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: '31%',
+            width: '30%',
           }}
-          onClick={openVue}
+          onClick={openDowntown}
         >
-          <img src={vue}
+          <img src={downtown}
             className={classes.imageSrc}
-            alt="Vue"
-            id="vue"
+            alt="Downtown"
+            id="downtown"
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
             <Typography
               component="span"
-              variant="h5"
+              variant="h4"
               color="white"
               className={classes.imageTitle}
             >
-              3 bd / 3.5 ba<br/>$575/night
+              Downtown
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
@@ -207,109 +203,83 @@ const FamilyDowntown = () => {
         <div className={classes.root}>
         <ButtonBase
           focusRipple
-          key='Casita'
+          key="Stay"
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: "20%",
+            width: '30%',
           }}
-          onClick={openCasita}
+          component={Link}
+          to="/stay-walla"
         >
-        <img src={casita}
-          className={classes.imageSrc}
-          alt="Casita"
-          id="casita"
-        />
-          <span className={classes.imageBackdrop} />
-          <span className={classes.imageButton} />
-            <Typography
-              component="span"
-              variant="h5"
-              color="white"
-              className={classes.imageTitle}
-            >
-              3 bd / 2 ba<br/>$130/night
-              <span className={classes.imageMarked} />
-            </Typography>
-        </ButtonBase>
-        <ButtonBase
-          focusRipple
-          key="Cherry"
-          className={classes.image}
-          focusVisibleClassName={classes.focusVisible}
-          style={{
-            width: "32%",
-          }}
-          onClick={openCherry}
-        >
-          <img src={cherry}
+          <img src={stay}
             className={classes.imageSrc}
-            alt="Cherry House"
-            id="cherry"
+            alt="Stay"
+            id="stay"
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
             <Typography
               component="span"
-              variant="h5"
+              variant="h4"
               color="white"
               className={classes.imageTitle}
             >
-              3 bd / 3.5 ba<br/>$475/night
+              Stay
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
         <ButtonBase
           focusRipple
-          key='Davey'
+          key='Drink'
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: "23%",
+            width: "45%",
           }}
-          onClick={openDavey}
+          onClick={openWinery}
         >
-        <img src={davey}
+        <img src={winery}
           className={classes.imageSrc}
-          alt="Davey Home"
-          id="davey"
+          alt="Drink"
+          id="winery"
         />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
             <Typography
               component="span"
-              variant="h5"
+              variant="h4"
               color="white"
               className={classes.imageTitle}
             >
-              5 bd / 5 ba<br/>$550/night
+              Drink
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
         <ButtonBase
           focusRipple
-          key='Traditional'
+          key='Outdoors'
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: "25%",
           }}
-          onClick={openTraditional}
+          onClick={openHikes}
         >
-        <img src={traditional}
+        <img src={hike}
           className={classes.imageSrc}
-          alt="Traditional Mansion"
-          id="traditional"
+          alt="Outdoors"
+          id="hike"
         />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
             <Typography
               component="span"
-              variant="h5"
+              variant="h4"
               color="white"
               className={classes.imageTitle}
             >
-              4 bd / 4 ba<br/>$475/night
+              Outdoors
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
@@ -317,4 +287,4 @@ const FamilyDowntown = () => {
     </>
   )
 }
-export default FamilyDowntown
+export default Visit

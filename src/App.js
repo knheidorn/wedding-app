@@ -4,16 +4,16 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import './App.css';
 
-import Home from './components/Home'
-import Venue from './components/Venue'
-import Rsvp from './components/Rsvp'
-import Address from './components/Address'
-import About from './components/About'
-import Visit from './components/Visit'
-import Stay from './components/Stay'
-import Toolbar from './components/Toolbar'
-import Dropdown from './components/Dropdown'
-import Background from './components/Background'
+import Home from './components/LandingPages/Home'
+import Venue from './components/LandingPages/Venue'
+import Rsvp from './components/LandingPages/Rsvp'
+import Address from './components/LandingPages/Address'
+import About from './components/LandingPages/About'
+import Visit from './components/LandingPages/Visit'
+import Stay from './components/LandingPages/Stay'
+import Toolbar from './components/Dropdown/Toolbar'
+import Dropdown from './components/Dropdown/Dropdown'
+import Background from './components/Dropdown/Background'
 import Footer from './components/Footer'
 import foliage from './images/foliage.png'
 

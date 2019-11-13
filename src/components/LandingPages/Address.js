@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import SubmitFormConfirm from './SubmitFormConfirm'
-import useForm from '../helpers/useForm';
-import validate from '../helpers/FormValidationRules'
+import useForm from '../../helpers/useForm';
+import validate from '../../helpers/FormValidationRules'
 
 import TextField from '@material-ui/core/TextField';
 import FormControl from '@material-ui/core/FormControl';

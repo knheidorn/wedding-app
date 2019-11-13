@@ -1,16 +1,18 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import FamilyDowntown from './FamilyDowntown'
-import FamilyCity from './FamilyCity'
-import SingleDowntown from './SingleDowntown'
-import SingleCity from './SingleCity'
+import FamilyDowntown from '../Rentals/FamilyDowntown'
+import FamilyCity from '../Rentals/FamilyCity'
+import SingleDowntown from '../Rentals/SingleDowntown'
+import SingleCity from '../Rentals/SingleCity'
 
 const Stay = () => {
   return (
     <div className="app">
-      <p className="stay-title">
-        Stay in Walla Walla
-      </p>
+      <div className="transbox">
+        <p className="stay-title">
+          Stay in Walla Walla
+        </p>
+      </div>
       <p className="day-of-text-large">
         We are excited for you to visit one of our favorite towns!<br/>
       </p>
@@ -23,7 +25,7 @@ const Stay = () => {
         Although unlisted, all major hotel chains are also available.
       </p>
       <div className="transbox">
-      <p className="page-title">
+      <p className="scroll-title">
         Couples / Singles
       </p>
       <p className="secondary-title">
@@ -34,7 +36,7 @@ const Stay = () => {
         City Limits
       </p>
         <SingleCity />
-      <p className="page-title">
+      <p className="scroll-title">
         Family Homes
       </p>
       <p className="secondary-title">

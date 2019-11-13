@@ -105,20 +105,22 @@
 .stay-title {
   position: relative;
   font-style: oblique;
-  font-weight: medium;
+  font-weight: lighter;
   font-size: 2.6rem;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
-.page-title {
+.scroll-title {
   padding-top: 2.5%;
   position: relative;
-  font-weight: medium;
+  font-weight: lighter;
   font-size: 2.3rem;
 }
 
 .secondary-title {
   position: relative;
-  font-weight: medium;
+  font-weight: lighter;
   font-size: 1.8rem;
 }
 
@@ -315,5 +317,171 @@
 
   .banner-image {
     width: 350px ;
+  }
+
+  .day-of-title {
+    font-size: 2.2rem;
+  }
+
+  .day-of-text-large {
+    font-size: 1.5rem;
+  }
+
+  .day-of-text-medium {
+    font-size: 1.3rem;
+  }
+
+  .day-of-text-small {
+    font-size: 1.1rem;
+  }
+
+  .day-of-text-xsmall {
+    font-size: .75rem;
+  }
+
+  .stay-title {
+    font-size: 2.4rem;
+  }
+
+  .scroll-title {
+    font-size: 2rem;
+  }
+
+  .secondary-title {
+    font-size: 1.6rem;
+  }
+
+  #venue {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #eat {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #winery {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #stay {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #downtown {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #hike {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  /*Family Downtown page*/
+  #birch {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #bungalow {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #vue {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #cherry {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #casita {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #davey {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #traditional {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  /*Family City page*/
+  #bryant {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #cottage {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #midcentury {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #bryantbarn {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #rewind {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #park {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #farm {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  /*Single Downtown page*/
+  #wesley {
+    width: 50%;
+    padding-left: 25%;
+  }
+
+  #hungate {
+    width: 50%;
+    padding-left: 25%;
+  }
+
+  #marcus {
+    width: 50%;
+    padding-left: 25%;
+  }
+
+  /*Single City page*/
+  #gable {
+    width: 50%;
+    padding-left: 25%;
+  }
+
+  #duck {
+    width: 50%;
+    padding-left: 25%;
+  }
+
+  #barn {
+    width: 50%;
+    padding-left: 25%;
   }
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
-import hands from '../images/proof3.jpg'
 
 import './Dropdown.css';
 

@@ -4,9 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
-import wesley from '../images/stay-page/single/downtown/wesley.png'
-import marcus from '../images/stay-page/single/downtown/marcus.jpeg'
-import hungate from '../images/stay-page/single/downtown/hungate.png'
+import wesley from '../../images/stay-page/single/downtown/wesley.png'
+import marcus from '../../images/stay-page/single/downtown/marcus.jpeg'
+import hungate from '../../images/stay-page/single/downtown/hungate.png'
 
 const useStyles = makeStyles(theme => ({
   root: {
