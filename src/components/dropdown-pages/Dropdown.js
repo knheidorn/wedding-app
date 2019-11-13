@@ -36,7 +36,7 @@ const Dropdown = (props) => {
             onClick={ closeDropdown }
           >
             <li>
-              Send Your Address
+              Send Address
             </li>
           </NavLink>
           <NavLink
