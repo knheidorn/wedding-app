@@ -312,4 +312,8 @@
   .toolbar-items {
     display: none;
   }
+
+  .banner-image {
+    width: 350px ;
+  }
 }
