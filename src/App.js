@@ -4,18 +4,18 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import './App.css';
 
-import Home from './components/LandingPages/Home'
-import Venue from './components/LandingPages/Venue'
-import Rsvp from './components/LandingPages/Rsvp'
-import Address from './components/LandingPages/Address'
-import About from './components/LandingPages/About'
-import Visit from './components/LandingPages/Visit'
-import Stay from './components/LandingPages/Stay'
-import Toolbar from './components/Dropdown/Toolbar'
-import Dropdown from './components/Dropdown/Dropdown'
-import Background from './components/Dropdown/Background'
+import Home from './components/landing-pages/Home'
+import Venue from './components/landing-pages/Venue'
+import Rsvp from './components/landing-pages/Rsvp'
+import Address from './components/landing-pages/Address'
+import About from './components/landing-pages/About'
+import Visit from './components/landing-pages/Visit'
+import Stay from './components/landing-pages/Stay'
+import Toolbar from './components/dropdown-pages/Toolbar'
+import Dropdown from './components/dropdown-pages/Dropdown'
+import Background from './components/dropdown-pages/Background'
 import Footer from './components/Footer'
-import foliage from './images/foliage.png'
+import foliage from './images/app-page/foliage.png'
 
 
 const App = () => {

@@ -1,0 +1,67 @@
+#venue {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#eat {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#winery {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#stay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#downtown {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#hike {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  #venue {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #eat {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #winery {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #stay {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #downtown {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  #hike {
+    width: 60%;
+    padding-left: 20%;
+  }
+}

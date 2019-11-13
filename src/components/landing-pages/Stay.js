@@ -1,27 +1,29 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import FamilyDowntown from '../Rentals/FamilyDowntown'
-import FamilyCity from '../Rentals/FamilyCity'
-import SingleDowntown from '../Rentals/SingleDowntown'
-import SingleCity from '../Rentals/SingleCity'
+
+import FamilyDowntown from '../rental-files/FamilyDowntown'
+import FamilyCity from '../rental-files/FamilyCity'
+import SingleDowntown from '../rental-files/SingleDowntown'
+import SingleCity from '../rental-files/SingleCity'
+
+import '../../css/stay-page/Stay.css'
 
 const Stay = () => {
   return (
     <div className="app">
       <div className="transbox">
-        <p className="stay-title">
+        <p className="page-title">
           Stay in Walla Walla
         </p>
       </div>
-      <p className="day-of-text-large">
+      <p className="body-text-large">
         We are excited for you to visit one of our favorite towns!<br/>
       </p>
-      <p className="day-of-text-medium">
+      <p className="body-text-medium">
         Below are a few places we would recommend checking out for your stay.<br/>
         Space is <b>limited</b>.<br/>
         We recommend booking ahead of time.
       </p>
-      <p className="day-of-text-small">
+      <p className="body-text-small">
         Although unlisted, all major hotel chains are also available.
       </p>
       <div className="transbox">

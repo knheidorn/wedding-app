@@ -28,7 +28,7 @@
 }
 
 .main-image-venue {
-  background: url('./images/backyard.jpg') center;
+  background: url('./images/backgrounds/backyard.jpg') center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -48,7 +48,7 @@
 }
 
 .save-the-date {
-  background: url('./images/proof3.jpg') center;
+  background: url('./images/backgrounds/proof3.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 3%;
@@ -70,25 +70,25 @@
   padding-bottom: 24%;
 }
 
-.day-of-text-large {
+.body-text-large {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   font-size: 1.7rem;
 }
 
-.day-of-text-medium {
+.body-text-medium {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   font-size: 1.4rem;
 }
 
-.day-of-text-small {
+.body-text-small {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   font-size: 1.2rem;
 }
 
-.day-of-text-xsmall {
+#footer-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   font-size: 1rem;
@@ -102,26 +102,13 @@
   padding-bottom: 1%;
 }
 
-.stay-title {
+.page-title {
   position: relative;
   font-style: oblique;
   font-weight: lighter;
   font-size: 2.6rem;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-}
-
-.scroll-title {
-  padding-top: 2.5%;
-  position: relative;
-  font-weight: lighter;
-  font-size: 2.3rem;
-}
-
-.secondary-title {
-  position: relative;
-  font-weight: lighter;
-  font-size: 1.8rem;
 }
 
 #confirmation-title {
@@ -149,167 +136,6 @@
   margin-top: 3%;
 }
 
-/* Vist page */
-#venue {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#eat {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#winery {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#stay {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#downtown {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#hike {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-/*Family Downtown page*/
-#birch {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#bungalow {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#vue {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#cherry {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#casita {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#davey {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#traditional {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-/*Family City page*/
-#bryant {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#cottage {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#midcentury {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#bryantbarn {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#rewind {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#park {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#farm {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-/*Single Downtown page*/
-#wesley {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#hungate {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#marcus {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-/*Single City page*/
-#gable {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#duck {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-#barn {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
 @media (max-width: 768px) {
   .toolbar-items {
     display: none;
@@ -323,165 +149,24 @@
     font-size: 2.2rem;
   }
 
-  .day-of-text-large {
+  .body-text-large {
     font-size: 1.5rem;
   }
 
-  .day-of-text-medium {
+  .body-text-medium {
     font-size: 1.3rem;
   }
 
-  .day-of-text-small {
+  .body-text-small {
     font-size: 1.1rem;
   }
 
-  .day-of-text-xsmall {
+  #footer-text {
     font-size: .75rem;
   }
 
-  .stay-title {
+  .page-title {
     font-size: 2.4rem;
   }
 
-  .scroll-title {
-    font-size: 2rem;
-  }
-
-  .secondary-title {
-    font-size: 1.6rem;
-  }
-
-  #venue {
-    width: 60%;
-    padding-left: 20%;
-  }
-
-  #eat {
-    width: 60%;
-    padding-left: 20%;
-  }
-
-  #winery {
-    width: 60%;
-    padding-left: 20%;
-  }
-
-  #stay {
-    width: 60%;
-    padding-left: 20%;
-  }
-
-  #downtown {
-    width: 60%;
-    padding-left: 20%;
-  }
-
-  #hike {
-    width: 60%;
-    padding-left: 20%;
-  }
-
-  /*Family Downtown page*/
-  #birch {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #bungalow {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #vue {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #cherry {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #casita {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #davey {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #traditional {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  /*Family City page*/
-  #bryant {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #cottage {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #midcentury {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #bryantbarn {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #rewind {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #park {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  #farm {
-    width: 70%;
-    padding-left: 15%;
-  }
-
-  /*Single Downtown page*/
-  #wesley {
-    width: 50%;
-    padding-left: 25%;
-  }
-
-  #hungate {
-    width: 50%;
-    padding-left: 25%;
-  }
-
-  #marcus {
-    width: 50%;
-    padding-left: 25%;
-  }
-
-  /*Single City page*/
-  #gable {
-    width: 50%;
-    padding-left: 25%;
-  }
-
-  #duck {
-    width: 50%;
-    padding-left: 25%;
-  }
-
-  #barn {
-    width: 50%;
-    padding-left: 25%;
-  }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
@@ -7,6 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import gable from '../../images/stay-page/single/city/gable.png'
 import duck from '../../images/stay-page/single/city/duck.png'
 import barn from '../../images/stay-page/single/city/barn.png'
+
+import '../../css/stay-page/SingleCity.css'
 
 const useStyles = makeStyles(theme => ({
   root: {

@@ -1,0 +1,22 @@
+.scroll-title {
+  padding-top: 2.5%;
+  position: relative;
+  font-weight: lighter;
+  font-size: 2.3rem;
+}
+
+.secondary-title {
+  position: relative;
+  font-weight: lighter;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .scroll-title {
+    font-size: 2rem;
+  }
+
+  .secondary-title {
+    font-size: 1.6rem;
+  }
+}

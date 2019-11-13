@@ -3,7 +3,7 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./images/background-crystal.jpg);
+  background-image: url(./images/app-page/background-crystal.jpg);
   background-size: cover;
 }
 

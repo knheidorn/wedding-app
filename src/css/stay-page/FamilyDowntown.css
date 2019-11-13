@@ -1,0 +1,78 @@
+#birch {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#bungalow {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#vue {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#cherry {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#casita {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#davey {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#traditional {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  #birch {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #bungalow {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #vue {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #cherry {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #casita {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #davey {
+    width: 70%;
+    padding-left: 15%;
+  }
+
+  #traditional {
+    width: 70%;
+    padding-left: 15%;
+  }
+}

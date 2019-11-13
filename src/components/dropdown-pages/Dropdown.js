@@ -1,7 +1,7 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-import './Dropdown.css';
+import '../../css/Dropdown.css'
 
 const Dropdown = (props) => {
   const {
@@ -11,7 +11,7 @@ const Dropdown = (props) => {
 
   let dropdownClasses = "dropdown"
 
-  if (props.showDropdown) {
+  if (showDropdown) {
     dropdownClasses = "dropdown open"
   }
 

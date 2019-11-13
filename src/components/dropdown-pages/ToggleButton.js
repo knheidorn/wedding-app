@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Dropdown.css';
+import '../../css/Dropdown.css'
 
 const ToggleButton = (props) => {
   return (

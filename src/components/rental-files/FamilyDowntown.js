@@ -1,16 +1,17 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
-import bryant from '../../images/stay-page/family/city/bryant.jpg'
-import park from '../../images/stay-page/family/city/park.jpg'
-import bryantbarn from '../../images/stay-page/family/city/bryantbarn.jpg'
-import midcentury from '../../images/stay-page/family/city/midcentury.jpg'
-import cottage from '../../images/stay-page/family/city/cottage.jpg'
-import rewind from '../../images/stay-page/family/city/rewind.jpg'
-import farm from '../../images/stay-page/family/city/farm.jpg'
+import birch from '../../images/stay-page/family/downtown/birch.jpg'
+import vue from '../../images/stay-page/family/downtown/vue.jpg'
+import bungalow from '../../images/stay-page/family/downtown/bungalow.jpg'
+import cherry from '../../images/stay-page/family/downtown/cherry.jpg'
+import casita from '../../images/stay-page/family/downtown/casita.jpg'
+import davey from '../../images/stay-page/family/downtown/davey.jpg'
+import traditional from '../../images/stay-page/family/downtown/traditional.jpg'
+
+import '../../css/stay-page/FamilyDowntown.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -89,32 +90,32 @@ const useStyles = makeStyles(theme => ({
 const FamilyDowntown = () => {
   const classes = useStyles()
 
-  const openBryant = () => {
-    window.open("https://www.airbnb.com/rooms/12985476?adults=2&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572408604_iL9pO%2BXsgsvi%2Ffj3")
+  const openBirch = () => {
+    window.open("https://www.airbnb.com/rooms/21862617?adults=2&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572389629_OHKZgLvTIYQqfp3N")
   }
 
-  const openBarn = () => {
-    window.open("https://www.airbnb.com/rooms/12983536?source_impression_id=p3_1572409442_Tqul84GCmbvq6pKk&check_in=2020-06-18&guests=6&adults=6&check_out=2020-06-21")
+  const openBungalow = () => {
+    window.open("https://www.airbnb.com/rooms/6576291?adults=2&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572391321_aj7EUG42JrXR2vZ0")
   }
 
-  const openPark = () => {
-    window.open("https://www.airbnb.com/rooms/21679633?adults=8&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572410509_HqBzDkIAIAKW%2FwbP&guests=8")
+  const openVue = () => {
+    window.open("https://www.airbnb.com/rooms/16191840?adults=2&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572391208_iXbmqzOAuIDdQJ4T")
   }
 
-  const openMid = () => {
-    window.open("https://www.airbnb.com/rooms/30818229?adults=6&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572409040_1XgjQJ6IS7hJXFhZ&guests=6")
+  const openCherry = () => {
+    window.open("https://www.airbnb.com/rooms/16204564?adults=4&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572395719_n9XTj3IR5kqTJL4R")
   }
 
-  const openCottage = () => {
-    window.open("https://www.airbnb.com/rooms/17644208?check_in=2020-06-18&check_out=2020-06-21&adults=4&guests=4")
+  const openCasita = () => {
+    window.open("https://www.airbnb.com/rooms/19545218?adults=4&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572396314_i6lifUKUr%2Fi5SLEt")
   }
 
-  const openRewind = () => {
-    window.open("https://www.airbnb.com/rooms/17406174?adults=4&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572410222_tdHLG1EAfTuRapB2&guests=4")
+  const openDavey = () => {
+    window.open("https://www.airbnb.com/rooms/16176508?adults=4&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572395664_Tgmedo3VXIFSRdkV")
   }
 
-  const openFarm = () => {
-    window.open("https://www.airbnb.com/rooms/16070568?adults=10&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572410757_lu7L%2FqIKKyTka9b0&guests=10")
+  const openTraditional = () => {
+    window.open("https://www.airbnb.com/rooms/18178760?adults=6&check_in=2020-06-18&check_out=2020-06-21&source_impression_id=p3_1572394083_bxn43b1SOikFwdCH")
   }
 
   return (
@@ -124,18 +125,18 @@ const FamilyDowntown = () => {
       >
         <ButtonBase
           focusRipple
-          key="Bryant"
+          key="Birch"
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: '36%',
           }}
-          onClick={openBryant}
+          onClick={openBirch}
         >
-          <img src={bryant}
+          <img src={birch}
             className={classes.imageSrc}
-            alt="Bryant"
-            id="bryant"
+            alt="Birch"
+            id="birch"
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
@@ -145,7 +146,7 @@ const FamilyDowntown = () => {
               color="white"
               className={classes.imageTitle}
             >
-              3 bd / 2 ba<br/>$450/night
+              2 bd / 2 ba<br/>$220/night
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
@@ -157,12 +158,12 @@ const FamilyDowntown = () => {
           style={{
             width: '33%',
           }}
-          onClick={openBarn}
+          onClick={openBungalow}
         >
-          <img src={bryantbarn}
+          <img src={bungalow}
             className={classes.imageSrc}
             alt="Bungalow"
-            id="bryantbarn"
+            id="bungalow"
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
@@ -172,24 +173,24 @@ const FamilyDowntown = () => {
               color="white"
               className={classes.imageTitle}
             >
-              Studio<br/>2 bd / 2 ba<br/>$425/night
+              2 bd / 2 ba<br/>$130/night
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
         <ButtonBase
           focusRipple
-          key="Park"
+          key="Vue"
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: '31%',
           }}
-          onClick={openPark}
+          onClick={openVue}
         >
-          <img src={park}
+          <img src={vue}
             className={classes.imageSrc}
-            alt="Park"
-            id="park"
+            alt="Vue"
+            id="vue"
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
@@ -199,7 +200,7 @@ const FamilyDowntown = () => {
               color="white"
               className={classes.imageTitle}
             >
-              4 bd / 3 ba<br/>$475/night
+              3 bd / 3.5 ba<br/>$575/night
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
@@ -207,18 +208,18 @@ const FamilyDowntown = () => {
         <div className={classes.root}>
         <ButtonBase
           focusRipple
-          key='Cottage'
+          key='Casita'
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: "20%",
           }}
-          onClick={openCottage}
+          onClick={openCasita}
         >
-        <img src={cottage}
+        <img src={casita}
           className={classes.imageSrc}
-          alt="Cottage"
-          id="cottage"
+          alt="Casita"
+          id="casita"
         />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
@@ -228,51 +229,24 @@ const FamilyDowntown = () => {
               color="white"
               className={classes.imageTitle}
             >
-              2 bd / 2 ba<br/>$175/night
+              3 bd / 2 ba<br/>$130/night
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
         <ButtonBase
           focusRipple
-          key='Rewind'
+          key="Cherry"
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: "32%",
           }}
-          onClick={openRewind}
+          onClick={openCherry}
         >
-        <img src={rewind}
-          className={classes.imageSrc}
-          alt="Rewind Home"
-          id="rewind"
-        />
-          <span className={classes.imageBackdrop} />
-          <span className={classes.imageButton} />
-            <Typography
-              component="span"
-              variant="h5"
-              color="white"
-              className={classes.imageTitle}
-            >
-              2 bd / 1 ba<br/>$205/night
-              <span className={classes.imageMarked} />
-            </Typography>
-        </ButtonBase>
-        <ButtonBase
-          focusRipple
-          key="Mid"
-          className={classes.image}
-          focusVisibleClassName={classes.focusVisible}
-          style={{
-            width: "23%",
-          }}
-          onClick={openMid}
-        >
-          <img src={midcentury}
+          <img src={cherry}
             className={classes.imageSrc}
-            alt="Mid House"
-            id="midcentury"
+            alt="Cherry House"
+            id="cherry"
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
@@ -282,24 +256,24 @@ const FamilyDowntown = () => {
               color="white"
               className={classes.imageTitle}
             >
-              3 bd / 2.5 ba<br/>$382/night
+              3 bd / 3.5 ba<br/>$475/night
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
         <ButtonBase
           focusRipple
-          key='Farm'
+          key='Davey'
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: "25%",
+            width: "23%",
           }}
-          onClick={openFarm}
+          onClick={openDavey}
         >
-        <img src={farm}
+        <img src={davey}
           className={classes.imageSrc}
-          alt="Farm Mansion"
-          id="farm"
+          alt="Davey Home"
+          id="davey"
         />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton} />
@@ -309,7 +283,34 @@ const FamilyDowntown = () => {
               color="white"
               className={classes.imageTitle}
             >
-              5 bd / 3.5 ba<br/>$495/night
+              5 bd / 5 ba<br/>$550/night
+              <span className={classes.imageMarked} />
+            </Typography>
+        </ButtonBase>
+        <ButtonBase
+          focusRipple
+          key='Traditional'
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: "25%",
+          }}
+          onClick={openTraditional}
+        >
+        <img src={traditional}
+          className={classes.imageSrc}
+          alt="Traditional Mansion"
+          id="traditional"
+        />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton} />
+            <Typography
+              component="span"
+              variant="h5"
+              color="white"
+              className={classes.imageTitle}
+            >
+              4 bd / 4 ba<br/>$475/night
               <span className={classes.imageMarked} />
             </Typography>
         </ButtonBase>
