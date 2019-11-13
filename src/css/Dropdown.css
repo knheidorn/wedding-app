@@ -11,7 +11,7 @@
   margin-left: 15px;
   box-sizing: border-box;
   top: 15px;
-  position: fixed;
+  position: absolute;
 }
 
 .toggle-list:focus {
