@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@material-ui/core/Box'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import './App.css';
 
 import Home from './components/Home'
 import Venue from './components/Venue'
@@ -10,12 +12,33 @@ import About from './components/About'
 import Visit from './components/Visit'
 import Stay from './components/Stay'
 import Toolbar from './components/Toolbar'
+import Dropdown from './components/Dropdown'
+import Background from './components/Background'
 import Footer from './components/Footer'
-import './App.css';
 import foliage from './images/foliage.png'
 
 
 const App = () => {
+
+  let background
+  const [dropdownOpen, setDropdown] = useState(false)
+
+  const dropdownClickHandler = () => {
+    setDropdown(prevState => ({
+      dropdownOpen: !prevState.dropdownOpen
+    }))
+  }
+
+  const closeDropdown = () => {
+    setDropdown(false)
+  }
+
+  if (dropdownOpen) {
+   background = <Background
+                  closeDropdown={ closeDropdown }
+                />
+  }
+
   return(
     <Router>
       <div>
@@ -23,8 +46,15 @@ const App = () => {
           <Box>
             <img src={ foliage } alt="Foliage" className="banner-image"/>
           </Box>
-          <Toolbar />
+          <Toolbar
+            dropdownToggle={ dropdownClickHandler }
+          />
+          <Dropdown
+            showDropdown={ dropdownOpen }
+            closeDropdown={ closeDropdown }
+          />
         </header>
+        { background }
       </div>
       <Switch>
         <Route exact path="/" component={ () =>

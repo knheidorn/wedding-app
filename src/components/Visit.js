@@ -110,175 +110,175 @@ const Visit = () => {
 
   return (
     <>
-    <div className={classes.root}
-      id="margin-button"
-    >
-      <ButtonBase
-        focusRipple
-        key="Venue"
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: '40%',
-        }}
-        onClick={openVenue}
+      <div className={classes.root}
+        id="margin-button"
       >
-        <img src={venue}
+        <ButtonBase
+          focusRipple
+          key="Venue"
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: '40%',
+          }}
+          onClick={openVenue}
+        >
+          <img src={venue}
+            className={classes.imageSrc}
+            alt="Venue"
+            id="venue"
+          />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton} />
+            <Typography
+              component="span"
+              variant="h4"
+              color="white"
+              className={classes.imageTitle}
+            >
+              Venue
+              <span className={classes.imageMarked} />
+            </Typography>
+        </ButtonBase>
+        <ButtonBase
+          focusRipple
+          key="Eat"
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: '30%',
+          }}
+          onClick={openRestaurants}
+        >
+          <img src={meal}
+            className={classes.imageSrc}
+            alt="Eat"
+            id="eat"
+          />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton} />
+            <Typography
+              component="span"
+              variant="h4"
+              color="white"
+              className={classes.imageTitle}
+            >
+              Eat
+              <span className={classes.imageMarked} />
+            </Typography>
+        </ButtonBase>
+        <ButtonBase
+          focusRipple
+          key="Downtown"
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: '30%',
+          }}
+          onClick={openDowntown}
+        >
+          <img src={downtown}
+            className={classes.imageSrc}
+            alt="Downtown"
+            id="downtown"
+          />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton} />
+            <Typography
+              component="span"
+              variant="h4"
+              color="white"
+              className={classes.imageTitle}
+            >
+              Downtown
+              <span className={classes.imageMarked} />
+            </Typography>
+        </ButtonBase>
+        </div>
+        <div className={classes.root}>
+        <ButtonBase
+          focusRipple
+          key="Stay"
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: '30%',
+          }}
+          component={Link}
+          to="/stay-walla"
+        >
+          <img src={stay}
+            className={classes.imageSrc}
+            alt="Stay"
+            id="stay"
+          />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton} />
+            <Typography
+              component="span"
+              variant="h4"
+              color="white"
+              className={classes.imageTitle}
+            >
+              Stay
+              <span className={classes.imageMarked} />
+            </Typography>
+        </ButtonBase>
+        <ButtonBase
+          focusRipple
+          key='Drink'
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: "45%",
+          }}
+          onClick={openWinery}
+        >
+        <img src={winery}
           className={classes.imageSrc}
-          alt="Venue"
-          id="venue"
+          alt="Drink"
+          id="winery"
         />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton} />
-          <Typography
-            component="span"
-            variant="h4"
-            color="white"
-            className={classes.imageTitle}
-          >
-            Venue
-            <span className={classes.imageMarked} />
-          </Typography>
-      </ButtonBase>
-      <ButtonBase
-        focusRipple
-        key="Eat"
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: '30%',
-        }}
-        onClick={openRestaurants}
-      >
-        <img src={meal}
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton} />
+            <Typography
+              component="span"
+              variant="h4"
+              color="white"
+              className={classes.imageTitle}
+            >
+              Drink
+              <span className={classes.imageMarked} />
+            </Typography>
+        </ButtonBase>
+        <ButtonBase
+          focusRipple
+          key='Outdoors'
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: "25%",
+          }}
+          onClick={openHikes}
+        >
+        <img src={hike}
           className={classes.imageSrc}
-          alt="Eat"
-          id="eat"
+          alt="Outdoors"
+          id="hike"
         />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton} />
-          <Typography
-            component="span"
-            variant="h4"
-            color="white"
-            className={classes.imageTitle}
-          >
-            Eat
-            <span className={classes.imageMarked} />
-          </Typography>
-      </ButtonBase>
-      <ButtonBase
-        focusRipple
-        key="Downtown"
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: '30%',
-        }}
-        onClick={openDowntown}
-      >
-        <img src={downtown}
-          className={classes.imageSrc}
-          alt="Downtown"
-          id="downtown"
-        />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton} />
-          <Typography
-            component="span"
-            variant="h4"
-            color="white"
-            className={classes.imageTitle}
-          >
-            Downtown
-            <span className={classes.imageMarked} />
-          </Typography>
-      </ButtonBase>
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton} />
+            <Typography
+              component="span"
+              variant="h4"
+              color="white"
+              className={classes.imageTitle}
+            >
+              Outdoors
+              <span className={classes.imageMarked} />
+            </Typography>
+        </ButtonBase>
       </div>
-      <div className={classes.root}>
-      <ButtonBase
-        focusRipple
-        key="Stay"
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: '30%',
-        }}
-        component={Link}
-        to="/stay-walla"
-      >
-        <img src={stay}
-          className={classes.imageSrc}
-          alt="Stay"
-          id="stay"
-        />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton} />
-          <Typography
-            component="span"
-            variant="h4"
-            color="white"
-            className={classes.imageTitle}
-          >
-            Stay
-            <span className={classes.imageMarked} />
-          </Typography>
-      </ButtonBase>
-      <ButtonBase
-        focusRipple
-        key='Drink'
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: "45%",
-        }}
-        onClick={openWinery}
-      >
-      <img src={winery}
-        className={classes.imageSrc}
-        alt="Drink"
-        id="winery"
-      />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton} />
-          <Typography
-            component="span"
-            variant="h4"
-            color="white"
-            className={classes.imageTitle}
-          >
-            Drink
-            <span className={classes.imageMarked} />
-          </Typography>
-      </ButtonBase>
-      <ButtonBase
-        focusRipple
-        key='Outdoors'
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: "25%",
-        }}
-        onClick={openHikes}
-      >
-      <img src={hike}
-        className={classes.imageSrc}
-        alt="Outdoors"
-        id="hike"
-      />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton} />
-          <Typography
-            component="span"
-            variant="h4"
-            color="white"
-            className={classes.imageTitle}
-          >
-            Outdoors
-            <span className={classes.imageMarked} />
-          </Typography>
-      </ButtonBase>
-    </div>
     </>
   )
 }

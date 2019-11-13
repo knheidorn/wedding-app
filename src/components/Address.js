@@ -69,132 +69,132 @@ const Address = () => {
     <div className="app">
       <div className="save-the-date">
         <div className="transbox-sd">
-        {isSubmitted ? (
-          <SubmitFormConfirm />
-        ) : (
-          <div className="form-sd">
-            <h2 id="title-sd">
-              Address Request
-            </h2>
-            <FormControl>
-              <TextField type="text"
-                label="First Name"
-                name="firstName"
-                value={valuesSD.firstName || ""}
-                onChange={handleChange}
-                required
-              />
-              {errorsSD.firstName && (
-                <p className="sd-is-danger">{errorsSD.firstName}</p>
-              )}
-              <TextField type="text"
-                label="Last Name"
-                name="lastName"
-                value={valuesSD.lastName || ""}
-                onChange={handleChange}
-                required
-              />
-              {errorsSD.lastName && (
-                <p className="sd-is-danger">{errorsSD.lastName}</p>
-              )}
-              <RadioGroup aria-label="position"
-                name="position"
-                onClick={liveWith}
-              >
-                <FormControlLabel
-                  className="live-with"
-                  value="true"
-                  control={<Radio color="primary" />}
-                  label={"Partner's Name"}
-                  labelPlacement="start"
-                  checked={liveWithState}
+          {isSubmitted ? (
+            <SubmitFormConfirm />
+          ) : (
+            <div className="form-sd">
+              <h2 id="title-sd">
+                Address Request
+              </h2>
+              <FormControl>
+                <TextField type="text"
+                  label="First Name"
+                  name="firstName"
+                  value={valuesSD.firstName || ""}
+                  onChange={handleChange}
+                  required
                 />
-              </RadioGroup>
-              {liveWithState &&
-                <>
-                  <TextField type="text"
-                    label="Partner's First"
-                    name="partFirstName"
-                    value={valuesSD.partFirstName || ""}
-                    onChange={handleChange}
-                    required
+                {errorsSD.firstName && (
+                  <p className="sd-is-danger">{errorsSD.firstName}</p>
+                )}
+                <TextField type="text"
+                  label="Last Name"
+                  name="lastName"
+                  value={valuesSD.lastName || ""}
+                  onChange={handleChange}
+                  required
+                />
+                {errorsSD.lastName && (
+                  <p className="sd-is-danger">{errorsSD.lastName}</p>
+                )}
+                <RadioGroup aria-label="position"
+                  name="position"
+                  onClick={liveWith}
+                >
+                  <FormControlLabel
+                    className="live-with"
+                    value="true"
+                    control={<Radio color="primary" />}
+                    label={"Partner's Name"}
+                    labelPlacement="start"
+                    checked={liveWithState}
                   />
-                  <TextField type="text"
-                    label="Partner's Last"
-                    name="partLastName"
-                    value={valuesSD.partLastName || ""}
-                    onChange={handleChange}
-                    required
-                  />
-                </>
-              }
-              <TextField type="text"
-                label="Address"
-                name="addressOne"
-                value={valuesSD.addressOne || ""}
-                onChange={handleChange}
-                required
-              />
-              {errorsSD.addressOne && (
-                <p className="sd-is-danger">{errorsSD.addressOne}</p>
-              )}
-              <TextField type="text"
-                label="Apt or Unit #"
-                name="addressTwo"
-                value={valuesSD.addressTwo || ""}
-                onChange={handleChange}
-              />
-              <TextField type="text"
-                label="City"
-                name="city"
-                value={valuesSD.city || ""}
-                onChange={handleChange}
-                required
-              />
-              {errorsSD.city && (
-                <p className="sd-is-danger">{errorsSD.city}</p>
-              )}
-              <TextField type="text"
-                label="State"
-                name="state"
-                value={valuesSD.state || ""}
-                onChange={handleChange}
-                required
-              />
-              {errorsSD.state && (
-                <p className="sd-is-danger">{errorsSD.state}</p>
-              )}
-              <TextField type="text"
-                label="Zipcode"
-                name="zipcode"
-                value={valuesSD.zipcode || ""}
-                onChange={handleChange}
-                required
-              />
-              {errorsSD.zipcode && (
-                <p className="sd-is-danger">{errorsSD.zipcode}</p>
-              )}
-              <TextField type="text"
-                label="Email"
-                name="email"
-                value={valuesSD.email || ""}
-                onChange={handleChange}
-                required
-              />
-              {errorsSD.email && (
-                <p className="sd-is-danger">{errorsSD.email}</p>
-              )}
-              <Fab type="submit"
-                aria-label="send"
-                color="primary"
-                className="submit-button"
-              >
-                <SendIcon onClick={handleSubmit}/>
-              </Fab>
-            </FormControl>
-          </div>
-        )}
-      </div>
+                </RadioGroup>
+                {liveWithState &&
+                  <>
+                    <TextField type="text"
+                      label="Partner's First"
+                      name="partFirstName"
+                      value={valuesSD.partFirstName || ""}
+                      onChange={handleChange}
+                      required
+                    />
+                    <TextField type="text"
+                      label="Partner's Last"
+                      name="partLastName"
+                      value={valuesSD.partLastName || ""}
+                      onChange={handleChange}
+                      required
+                    />
+                  </>
+                }
+                <TextField type="text"
+                  label="Address"
+                  name="addressOne"
+                  value={valuesSD.addressOne || ""}
+                  onChange={handleChange}
+                  required
+                />
+                {errorsSD.addressOne && (
+                  <p className="sd-is-danger">{errorsSD.addressOne}</p>
+                )}
+                <TextField type="text"
+                  label="Apt or Unit #"
+                  name="addressTwo"
+                  value={valuesSD.addressTwo || ""}
+                  onChange={handleChange}
+                />
+                <TextField type="text"
+                  label="City"
+                  name="city"
+                  value={valuesSD.city || ""}
+                  onChange={handleChange}
+                  required
+                />
+                {errorsSD.city && (
+                  <p className="sd-is-danger">{errorsSD.city}</p>
+                )}
+                <TextField type="text"
+                  label="State"
+                  name="state"
+                  value={valuesSD.state || ""}
+                  onChange={handleChange}
+                  required
+                />
+                {errorsSD.state && (
+                  <p className="sd-is-danger">{errorsSD.state}</p>
+                )}
+                <TextField type="text"
+                  label="Zipcode"
+                  name="zipcode"
+                  value={valuesSD.zipcode || ""}
+                  onChange={handleChange}
+                  required
+                />
+                {errorsSD.zipcode && (
+                  <p className="sd-is-danger">{errorsSD.zipcode}</p>
+                )}
+                <TextField type="text"
+                  label="Email"
+                  name="email"
+                  value={valuesSD.email || ""}
+                  onChange={handleChange}
+                  required
+                />
+                {errorsSD.email && (
+                  <p className="sd-is-danger">{errorsSD.email}</p>
+                )}
+                <Fab type="submit"
+                  aria-label="send"
+                  color="primary"
+                  className="submit-button"
+                >
+                  <SendIcon onClick={handleSubmit}/>
+                </Fab>
+              </FormControl>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )
