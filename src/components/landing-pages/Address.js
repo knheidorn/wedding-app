@@ -38,7 +38,6 @@ const Address = () => {
     }
 
     let body = {guest: guest}
-    console.log(body)
 
     let config = {
       method: "POST",
