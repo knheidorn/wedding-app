@@ -127,6 +127,10 @@
   padding-bottom: 250px;
 }
 
+#footer {
+  text-align: center
+}
+
 #title-sd {
   font-style: oblique;
   font-weight: 350;
