@@ -22,6 +22,7 @@ const App = () => {
 
   let background
   const [dropdownOpen, setDropdown] = useState(false)
+  const [guestAddresses, setGuestAddy] = useState([])
 
   const dropdownClickHandler = () => {
     setDropdown(prevState => ({
@@ -37,6 +38,15 @@ const App = () => {
    background = <Background
                   closeDropdown={ closeDropdown }
                 />
+  }
+
+  const loadGuestAddy = () => {
+
+    fetch("https://guest-book-wein.herokuapp.com/guests")
+      .then (response => response.json())
+      .then (data => {
+        setGuestAddy(data)
+      })
   }
 
   return(
@@ -78,6 +88,7 @@ const App = () => {
         <Route path="/stay-walla" component={ () =>
           <Stay />
         }/>
+    
       </Switch>
       <div>
         <footer>

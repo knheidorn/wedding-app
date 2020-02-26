@@ -22,9 +22,9 @@ const Toolbar = (props) => {
             className="toolbar-tabs"
           />
           <Tab
-            label="Send Your Address"
+            label="RSVP"
             component={ Link }
-            to="/save-the-date"
+            to="/rsvp"
             className="toolbar-tabs"
           />
           <Tab
