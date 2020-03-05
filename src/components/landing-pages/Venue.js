@@ -1,4 +1,8 @@
 import React from 'react'
+import Friday from './Friday'
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Saturday from './Saturday'
 
 const Venue = () => {
   return(
@@ -10,23 +14,14 @@ const Venue = () => {
       </div>
       <div className="main-image-venue">
         <div className="transbox">
-          <p className="day-of-title">
-            June 20, 2020
-          </p>
-          <p className="body-text-large">
-            Both the Ceremony and Reception
-            <br/>will be held at Basel Cellars.
-            <br/>More details to follow.
-          </p>
-          <p className="body-text-small">
-            <strong>Basel Cellars</strong>
-            <br/>2901 Old Milton Hwy
-            <br/>Walla Walla, WA 99362
-          </p>
-          <p className="body-text-medium">
-            Please check out the <i>Stay</i> and <i>Visit</i> tabs
-            <br/> for places to stay and things to do in Walla Walla.
-          </p>
+          <Grid container spacing={2}>
+            <Grid item xs={6}>
+              <Paper><Friday/></Paper>
+            </Grid>
+            <Grid item xs={6}>
+              <Paper><Saturday/></Paper>
+            </Grid>
+          </Grid>
         </div>
       </div>
     </>
