@@ -11,9 +11,7 @@ const Friday = () => {
         <Grid item xs={6}>
           <p className="body-text-large">
             <strong>Like Golf?</strong>
-          </p>
-          <p className="body-text-large">
-            <i>Join Nich for a Par-Tee</i>
+            <br/><i>Join Nich for a Par-Tee</i>
           </p>
           <p className="body-text-medium">
             Tee Times 12-1pm
@@ -28,9 +26,7 @@ const Friday = () => {
         <Grid item xs={6}>
           <p className="body-text-large">
             <strong>Have Little Ones?</strong>
-          </p>
-          <p className="body-text-large">
-            <i>Join Kim for a Pool Party</i>
+            <br/><i>Join Kim for a Pool Party</i>
           </p>
           <p className="body-text-medium">
             Arrive anytime after 12pm
