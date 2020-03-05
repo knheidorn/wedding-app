@@ -149,6 +149,11 @@
   margin-top: 3%;
 }
 
+.smile-face {
+  height: 50px;
+  width: 50px;
+}
+
 @media (max-width: 768px) {
   .toolbar-items {
     display: none;
