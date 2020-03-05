@@ -32,16 +32,6 @@ const Dropdown = (props) => {
           <NavLink
             className="dropdown-links"
             activeClassName="dropdown-links-active"
-            to="/save-the-date"
-            onClick={ closeDropdown }
-          >
-            <li>
-              Send Address
-            </li>
-          </NavLink>
-          <NavLink
-            className="dropdown-links"
-            activeClassName="dropdown-links-active"
             to="/day-of-details"
             onClick={ closeDropdown }
           >
