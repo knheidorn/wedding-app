@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
-import RsvpDetail from '../form-components/RsvpDetail'
-
-import TextField from '@material-ui/core/TextField';
-import FormControl from '@material-ui/core/FormControl';
-import SendIcon from '@material-ui/icons/Send';
-import Checkbox from '@material-ui/core/Checkbox';
-import Favorite from '@material-ui/icons/Favorite';
-import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Button from '@material-ui/core/Button';
+import RsvpForm from '../rsvp-pages/form-components/RsvpForm'
+import RsvpYes from '../rsvp-pages/RsvpYes'
+import RsvpNo from '../rsvp-pages/RsvpNo'
 
 class Rsvp extends Component {
 
@@ -25,7 +18,9 @@ class Rsvp extends Component {
       rsvpDate: null,
       dietRestrict: null,
       kidCount: null,
-      livesWith: false
+      livesWith: false,
+      submitYes: false,
+      submitNo: false
     }
   }
 
@@ -93,13 +88,20 @@ class Rsvp extends Component {
       },
       body: JSON.stringify(body)
     }
-    console.log(body)
-    // fetch("https://guest-book-wein.herokuapp.com/rsvps", config)
-    //   .then(response => response.json())
+    fetch("https://guest-book-wein.herokuapp.com/rsvps", config)
+      .then(response => response.json())
   }
 
-   submitForm = () => {
+  submitForm = () => {
+    let {isAttending} = this.state
+
     this.submitRSVP()
+
+    if(isAttending) {
+      this.setState({submitYes: true})
+    } else {
+      this.setState({submitNo: true})
+    }
   }
 
   handleChange = (event) => {
@@ -118,8 +120,36 @@ class Rsvp extends Component {
       lastName,
       partFirstName,
       partLastName,
-      livesWith
+      livesWith,
+      submitYes,
+      submitNo
     } = this.state
+
+    let rsvpPage;
+
+    if (submitYes) {
+      rsvpPage = <RsvpYes/>
+    } else if (submitNo) {
+      rsvpPage = <RsvpNo/>
+    } else {
+      rsvpPage = <RsvpForm
+                  isAttending = {isAttending}
+                  dietRestrict = {dietRestrict}
+                  rsvpDate = {rsvpDate}
+                  kidCount = {kidCount}
+                  hasKids = {hasKids}
+                  firstName = {firstName}
+                  lastName = {lastName}
+                  partFirstName = {partFirstName}
+                  partLastName = {partLastName}
+                  livesWith = {livesWith}
+                  submitYes = {submitYes}
+                  submitNo = {submitNo}
+                  toggleCheck = {this.toggleCheck}
+                  handleChange = {this.handleChange}
+                  submitForm = {this.submitForm}
+                 />
+    }
 
     return(
       <>
@@ -130,58 +160,8 @@ class Rsvp extends Component {
         </div>
         <div className="main-image-rsvp">
           <div className="transbox">
-            <div id="center-form">
-            <FormControl>
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    icon={<FavoriteBorder />}
-                    checkedIcon={<Favorite />}
-                    value={isAttending}
-                    name="isAttending"
-                    onChange={this.toggleCheck}
-                  />}
-                checked={isAttending}
-                label="Attending?"
-              />
-              <TextField type="text"
-                label="First Name"
-                name="firstName"
-                value={firstName || ""}
-                onChange={this.handleChange}
-                required
-              />
-              <TextField type="text"
-                label="Last Name"
-                name="lastName"
-                value={lastName || ""}
-                onChange={this.handleChange}
-                required
-              />
-              {isAttending &&
-                <>
-                  <RsvpDetail
-                    partFirstName={partFirstName}
-                    partLastName={partLastName}
-                    rsvpDate={rsvpDate}
-                    dietRestrict={dietRestrict}
-                    kidCount={kidCount}
-                    hasKids={hasKids}
-                    livesWith={livesWith}
-                    toggleCheck={this.toggleCheck}
-                    handleChange={this.handleChange}
-                  />
-                </>
-              }
-              <Button type="submit"
-                aria-label="Send"
-                className="submit-button"
-                onClick={this.submitForm}
-                endIcon={<SendIcon />}
-              >
-                Send RSVP
-              </Button>
-              </FormControl>
+            <div class="center-form">
+              {rsvpPage}
             </div>
           </div>
         </div>

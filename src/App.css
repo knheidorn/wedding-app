@@ -27,6 +27,13 @@
   margin-top: 3%;
 }
 
+.day-button {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .main-image-venue {
   background: url('./images/backgrounds/backyard.jpg') center;
   background-repeat: no-repeat;
@@ -56,6 +63,17 @@
   text-align: center;
 }
 
+.transbox-venue {
+  position: relative;
+  top: 5%;
+  background-color: #ffffff;
+  opacity: 0.79;
+  height: 90%;
+  width: 100%;
+  filter: alpha(opacity=79);
+  text-align: center;
+}
+
 .save-the-date {
   background: url('./images/backgrounds/proof3.jpg') center;
   background-repeat: no-repeat;
@@ -79,8 +97,13 @@
   padding-bottom: 24%;
 }
 
-#center-form {
-  padding-top: 50px;
+.center-form {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 2s;
 }
 
 .body-text-large {
@@ -147,6 +170,35 @@
 
 #margin-button {
   margin-top: 3%;
+}
+
+.smile-face {
+  height: 50px;
+  width: 50px;
+}
+
+.venue-arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+}
+
+.venue-arrow-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
+}
+
+#rsvp-yes {
+  height: 40%;
+  width: 40%;
+}
+
+#rsvp-no {
+  height: 60%;
+  width: 60%;
 }
 
 @media (max-width: 768px) {

@@ -26,7 +26,17 @@ const Dropdown = (props) => {
             onClick={ closeDropdown }
           >
             <li>
-              Home
+              HOME
+            </li>
+          </NavLink>
+          <NavLink
+            className="dropdown-links"
+            activeClassName="dropdown-links-active"
+            to="/rsvp"
+            onClick={ closeDropdown }
+          >
+            <li>
+              RSVP
             </li>
           </NavLink>
           <NavLink
@@ -36,7 +46,7 @@ const Dropdown = (props) => {
             onClick={ closeDropdown }
           >
             <li>
-              Itinerary
+              ITINERARY
             </li>
           </NavLink>
           <NavLink
@@ -46,7 +56,7 @@ const Dropdown = (props) => {
             onClick={ closeDropdown }
           >
             <li>
-              Stay
+              STAY
             </li>
           </NavLink>
           <NavLink
@@ -56,7 +66,7 @@ const Dropdown = (props) => {
             onClick={ closeDropdown }
           >
             <li>
-              Visit
+              VISIT
             </li>
           </NavLink>
         </ul>
