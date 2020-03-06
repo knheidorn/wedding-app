@@ -88,9 +88,8 @@ class Rsvp extends Component {
       },
       body: JSON.stringify(body)
     }
-    console.log(body)
-    // fetch("https://guest-book-wein.herokuapp.com/rsvps", config)
-    //   .then(response => response.json())
+    fetch("https://guest-book-wein.herokuapp.com/rsvps", config)
+      .then(response => response.json())
   }
 
   submitForm = () => {
@@ -161,7 +160,7 @@ class Rsvp extends Component {
         </div>
         <div className="main-image-rsvp">
           <div className="transbox">
-            <div id="center-form">
+            <div class="center-form">
               {rsvpPage}
             </div>
           </div>

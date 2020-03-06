@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import SubmitFormConfirm from './SubmitFormConfirm'
 import useForm from '../../helpers/useForm';
 import validate from '../../helpers/FormValidationRules'
 
@@ -68,7 +67,8 @@ const Address = () => {
       <div className="save-the-date">
         <div className="transbox-sd">
           {isSubmitted ? (
-            <SubmitFormConfirm />
+            <>
+            </>
           ) : (
             <div className="form-sd">
               <h2 id="title-sd">
